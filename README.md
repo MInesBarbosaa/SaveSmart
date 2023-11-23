@@ -7,4 +7,4 @@ Maria Inês Barbosa <br>
 Merve Betül Üstün <br>
 Sian Buckley
 
-**Website**: (https://minesbarbosaa.github.io/SaveSmart/)https://minesbarbosaa.github.io/SaveSmart/
+**Website**: https://minesbarbosaa.github.io/SaveSmart/
