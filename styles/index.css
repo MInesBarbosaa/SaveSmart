@@ -1,0 +1,213 @@
+h1 {
+  text-align: center;
+  color: rgb(19, 74, 138);
+}
+
+/* Styling the welcome container */
+.welcome {
+  text-align: center;
+  background-color: white;
+  border: 1px solid;
+  border-color: var(--secondary-blue);
+  padding: 20px 0;
+}
+
+.welcome p {
+  color: rgb(19, 74, 138);
+  margin-top: 20px;
+}
+
+
+
+/* Styling the goal container */
+.goals {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-content: space-evenly;
+  margin: 40px 0;
+}
+
+.goal {
+  text-align: center;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: var(--secondary-blue);
+  max-width: 300px;
+  background-color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goal h3 {
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.dailyGoal {
+  line-height: 1.5;
+}
+
+#dailyGoal {
+  padding-top: 20px;
+}
+
+#currentMoney, #monthlyGoal, #dailyGoal {
+  font-size: 20px;
+}
+
+.month-goal {
+  color: #0056b3;
+  font-weight: bold;
+}
+
+
+/* Styling the progress bar */
+#goalBar {
+  width: 300px;
+  height: 20px;
+  appearance: none;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* Styling the progress bar value */
+#goalBar::-webkit-progress-value {
+  background-color: rgb(19, 74, 138);
+  border-radius: 5px;
+}
+
+/* Styling the labels */
+.goal p {
+  margin: 5px 0;
+
+}
+
+.settings {
+  padding-top: 30px;
+}
+
+.monthlyGoal {
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .goals {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: max-content;
+  }
+}
+
+
+
+/* Styling the pages container */
+.pages {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0px;
+  margin: 5rem 100px;
+}
+
+/* Styling each link set */
+.linkPages {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 150px;
+  gap: 1rem;
+}
+
+.linkPages img {
+  max-width: 220px;
+  height: 150px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: rgb(19, 74, 138);
+}
+
+.linkPages a {
+  color: #333;
+  font-size: 16px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: rgb(19, 74, 138);
+  background-color: white;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.linkPages a:hover {
+  color: lightgray;
+}
+
+@media only screen and (max-width: 600px) {
+  .pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+/* Styling the preferences  */
+#preferences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  /* max-width: 400px; */
+
+  word-wrap: break-word;
+  border: 1px solid var(--secondary-blue);
+  border-radius: 5px;
+  background-color: white;
+  /* margin: 2rem; */
+  padding: 1rem;
+  /* background-color: red; */
+}
+
+#preferences h2 {
+  text-align: center;
+  color: #0056b3;
+  margin: 2rem;
+}
+
+.preference {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.button {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Team</title>
+    <link rel="stylesheet" href="../../main.css" />
+    <!-- <link rel="stylesheet" href="./" /> -->
+     <style>
+        .image-container {
+          position: relative;
+          display: flex;
+
+          align-items: center;
+        }
+
+        .image-container img {
+          flex: 1;
+          margin: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          width: 50px;
+        }
+        .style-button {
+          font-size: 16px;
+          text-align: center;
+          font-weight: bold;
+          margin-top: 10px;
+          cursor: pointer;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        #info-button {
+      margin-top: 10px;
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="icon">
+        <a href="index.html">
+          <img src="imgs/icon.png" alt="" />
+        </a>
+        <a href="index.html">SaveSmart</a>
+      </div>
+
+      <div class="links">
+        <a href="../../pages/forum.html">Forum</a>
+        <a href="../../pages/calculator.html">Calculator</a>
+        <a href="../../pages/tips.html">Tips</a>
+      </div>
+    </nav>
+
+    <main>
+      <h1>Who are we?</h1>
+      <!-- Explanation of how we met and why we created this website. -->
+      <!-- Add CSS -->
+      <!-- Add more content with HTML -->
+      <div>
+        <h2 class="team">Team</h2>
+        <div class="image-container">
+      <div>
+        <img
+          src="https://cdn.pixabay.com/photo/2014/03/24/13/42/female-294094_1280.png"
+          alt="Image 1"
+        />
+      </div>
+
+      <button id="Merve-button" class="style-button">Merve</button>
+
+      <div id="more-info" style="display: none">
+        <p>A bit more about me goes here!</p>
+      </div>
+
+      <div>
+        <img
+          src="https://cdn.pixabay.com/photo/2014/03/24/13/42/female-294094_1280.png"
+          alt="Image 2"
+        />
+        <button id="Anna-button" class="style-button">Anna</button>
+
+        <div id="more-info2" style="display: none">
+          <p>A bit more about me goes here!</p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="https://cdn.pixabay.com/photo/2014/03/24/13/42/female-294094_1280.png"
+          alt="Image 3"
+        />
+        <button id="Inês-button" class="style-button">Inês</button>
+
+        <div id="more-info3" style="display: none">
+          <p>A bit more about me goes here!</p>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="https://cdn.pixabay.com/photo/2014/03/24/13/42/female-294094_1280.png"
+          alt="Image 4"
+        />
+        <button id="Sian-button" class="style-button">Sian</button>
+
+        <div id="more-info4" style="display: none">
+          <p>A bit more about me goes here!</p>
+        </div>
+      </div>
+    </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerContacts">
+        <a href="../../pages/extra/who_are_we.html" target="_blank">Who are we?</a>
+        <a href="mailto:info@savesmart.com">Contact Us</a>
+        <a href="../../pages/extra/privacy_policy.html" target="_blank"
+          >Privacy Policy</a
+        >
+        <a href="../../pages/extra/terms_and_conditions.html" target="_blank"
+          >Terms and Conditions</a
+        >
+      </div>
+      
+      <p>Copyright Team Black ©2023</p>
+    </footer>
+   <script>
+      const toggleButton = document.getElementById("Merve-button");
+      const moreInfo = document.getElementById("more-info");
+
+      toggleButton.addEventListener("click", function () {
+        if (moreInfo.style.display === "none") {
+          moreInfo.style.display = "block";
+        } else {
+          moreInfo.style.display = "none";
+        }
+      });
+
+      const toggleButton2 = document.getElementById("Anna-button");
+      const moreInfo2 = document.getElementById("more-info2");
+
+      toggleButton2.addEventListener("click", function () {
+        if (moreInfo2.style.display === "none") {
+          moreInfo2.style.display = "block";
+        } else {
+          moreInfo2.style.display = "none";
+        }
+      });
+
+      const toggleButton3 = document.getElementById("Inês-button");
+      const moreInfo3 = document.getElementById("more-info3");
+
+      toggleButton3.addEventListener("click", function () {
+        if (moreInfo3.style.display === "none") {
+          moreInfo3.style.display = "block";
+        } else {
+          moreInfo3.style.display = "none";
+        }
+      });
+
+      const toggleButton4 = document.getElementById("Sian-button");
+      const moreInfo4 = document.getElementById("more-info4");
+
+      toggleButton4.addEventListener("click", function () {
+        if (moreInfo4.style.display === "none") {
+          moreInfo4.style.display = "block";
+        } else {
+          moreInfo4.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

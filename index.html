@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Planner</title>
+
+    <!-- styling of body, navbar and footer  -->
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="icon">
+        <a href="index.html">
+          <img src="imgs/icon.png" alt="icon of the website" />
+        </a>
+        <a href="index.html">SaveSmart</a>
+      </div>
+
+      <div class="links">
+        <a href="pages/forum.html">Forum</a>
+        <a href="pages/calculator.html">Calculator</a>
+        <a href="pages/tips.html">Tips</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="welcome">
+        <h1 id="username">Hello Julia!</h1>
+        <p>Welcome Back!</p>
+      </div>
+
+      <div class="goals">
+
+        <div class="goal">
+          <h3>Money Saved Daily</h3>
+          <div class="dailyGoal">
+            <p id="dailyGoal">5€</p>
+            <p class="settings">Check your settings to see if it is being updated at the end of everyday <b>automatically</b>.</p>
+          </div>
+        </div>
+
+        <div class="goal">
+          <h3>Your Progress This Month</h3>
+          <div class="currentMoney">
+            <p id="currentMoney">25 €</p>
+            <progress id="goalBar" max="150" value="25">25%</progress>
+            <button id="increaseMoneyButton">Add Money</button>
+          </div>
+          
+          <div class="monthlyGoal">
+            <p class="month-goal">Monthly Goal</p>
+            <p id="monthlyGoal">150 €</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="preferences">
+        <form>
+          <h2>Preferences</h2>
+          <div class="preference">
+            <input
+              type="checkbox"
+              id="preference1"
+              name="preference1"
+              value="preference1"
+            />
+            <label for="preference1"
+              >I would like the targeted amount to be automatically sent to my
+              separate account on a daily basis.</label
+            >
+          </div>
+          <div class="preference">
+            <input
+              type="checkbox"
+              id="preference2"
+              name="preference2"
+              value="preference2"
+            />
+            <label for="preference2"
+              >I would like to be notified via e-mail or SMS if I exceed my
+              daily goal.</label
+            >
+          </div>
+          <div class="button">
+            <button type="submit">Update preferences</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="pages">
+        <div class="linkPages">
+          <img src="imgs/forum.jpg" alt="" />
+          <a href="pages/forum.html">Forum</a>
+        </div>
+        <div class="linkPages">
+          <img src="imgs/calculator.jpeg" alt="" />
+          <a href="pages/calculator.html">Calculator</a>
+        </div>
+        <div class="linkPages">
+          <img src="imgs/tips.jpg" alt="" />
+          <a href="pages/tips.html">Savings Tips</a>
+        </div>
+      </div>
+   
+</section>
+</main>
+
+
+
+    <footer>
+      <div class="footerContacts">
+        <a href="./pages/extra/who_are_we.html" target="_blank">Who are we?</a>
+        <a href="mailto:info@savesmart.com">Contact Us</a>
+        <a href="./pages/extra/privacy_policy.html" target="_blank"
+          >Privacy Policy</a
+        >
+        <a href="./pages/extra/terms_and_conditions.html" target="_blank"
+          >Terms and Conditions</a
+        >
+      </div>
+      <p>Copyright Team Black ©2023</p>
+    </footer>
+
+    <!--<script src="js/dummy_data.js"></script>-->
+    <script src="script.js"></script>
+  </body>
+</html>

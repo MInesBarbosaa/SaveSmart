@@ -1,0 +1,91 @@
+h1 {
+  color: #134a89;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/*Making a box around 'today's tip'*/
+.container {
+  border: 1px solid black;
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+  background-color: #f9f9f9;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.container p {
+  text-align: justify;
+  line-height: 1.6; 
+  margin-top: 20px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: #007bff;
+  color: #fffdf2;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  background-color: #0056b3;
+}
+
+.share-tips {
+  margin-bottom: 50px;
+}
+
+
+/* Comments section */
+.comments-section {
+  width: 750px;
+  max-width: 750px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  background-color: #f9f9f9;
+  margin: 20px;
+  text-align: justify;
+  align-items: flex-start;
+}
+
+h2 {
+  color: rgb(19, 74, 138);
+  align-self: center;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  padding-right: 10px;  
+}
+
+.comment img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
